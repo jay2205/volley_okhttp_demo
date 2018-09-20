@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_image"
+        android:scaleType="centerCrop"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Jayanth"
+            android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Romcom"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="3dp"
+            android:text="8.9"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rating_background"
+            android:drawableLeft="@drawable/ic_star"/>
+
+        <TextView
+            android:id="@+id/tv_studio"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jay Kashyap Studios"/>
+
+    </LinearLayout>
+
+</LinearLayout>
